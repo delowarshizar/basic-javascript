@@ -26,3 +26,19 @@ for(const item of fevitems)
 {
     console.log(item.innerText)
 }
+
+const sectionlist = document.querySelectorAll('section')
+console.log(sectionlist)
+// for(const section of sectionlist)
+// {
+//     console.log(section)
+//     section.style.backgroundColor='lightblue'
+//     section.style.padding = '5px'
+//     section.style.borderRadius = '10px'
+//     section.style.border = '2px solid green'
+//     section.style.margin = '5px'
+// }
+for(const section of sectionlist)
+{
+    section.classList.add('section-card')
+}

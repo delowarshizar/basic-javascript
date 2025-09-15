@@ -5,3 +5,10 @@ h1 {
   color: red;
   font-weight: 700;
 }
+.section-card{
+    background-color: burlywood;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
