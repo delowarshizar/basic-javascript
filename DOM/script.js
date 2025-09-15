@@ -28,14 +28,13 @@ for (const item of fevitems) {
 
 const sectionlist = document.querySelectorAll("section");
 console.log(sectionlist);
-for(const section of sectionlist)
-{
-    console.log(section)
-    section.style.backgroundColor='lightblue'
-    section.style.padding = '5px'
-    section.style.borderRadius = '10px'
-    section.style.border = '2px solid green'
-    section.style.margin = '5px'
+for (const section of sectionlist) {
+  console.log(section);
+  section.style.backgroundColor = "lightblue";
+  section.style.padding = "5px";
+  section.style.borderRadius = "10px";
+  section.style.border = "2px solid green";
+  section.style.margin = "5px";
 }
 // for (const section of sectionlist) {
 //   section.classList.add("section-card");
@@ -50,38 +49,37 @@ console.log(footballer);
 
 footballer.appendChild(newchild);
 
-const main = document.getElementById('main') 
-console.log(main)
+const main = document.getElementById("main");
+console.log(main);
 
-const places = document.createElement('section')
-main.appendChild(places)
+const places = document.createElement("section");
+main.appendChild(places);
 
-const h1 = document.createElement('h1')
-h1.innerText ='Name of Places'
-places.appendChild(h1)
+const h1 = document.createElement("h1");
+h1.innerText = "Name of Places";
+places.appendChild(h1);
 
-const ul = document.createElement('ul')
-places.appendChild(ul)
+const ul = document.createElement("ul");
+places.appendChild(ul);
 
-const li1 = document.createElement('li')
-li1.innerText = 'Rajshahi'
-ul.appendChild(li1)
+const li1 = document.createElement("li");
+li1.innerText = "Rajshahi";
+ul.appendChild(li1);
 
-const li2 = document.createElement('li')
-li2.innerText = 'Sylhet'
-ul.appendChild(li2)
+const li2 = document.createElement("li");
+li2.innerText = "Sylhet";
+ul.appendChild(li2);
 
-const li3 = document.createElement('li')
-li3.innerText = 'Dhaka'
-ul.appendChild(li3)
+const li3 = document.createElement("li");
+li3.innerText = "Dhaka";
+ul.appendChild(li3);
 
-const books = document.createElement('section')
+const books = document.createElement("section");
 books.innerHTML = `
 <h1> These books are very popular </h1>
 <ul>
     <li>Computer Fundamental </li>
     <li>Machine Learing</li>
 </ul>
-`
-main.appendChild(books)
-
+`;
+main.appendChild(books);
