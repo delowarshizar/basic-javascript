@@ -1,3 +1,7 @@
-li{
-    color: pink;
+h1 {
+  color: green;
+}
+#food .items {
+  color: red;
+  font-weight: 700;
 }
