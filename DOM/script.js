@@ -49,3 +49,31 @@ const footballer = document.getElementById("Player");
 console.log(footballer);
 
 footballer.appendChild(newchild);
+
+const main = document.getElementById('main') 
+console.log(main)
+
+const places = document.createElement('section')
+main.appendChild(places)
+
+const h1 = document.createElement('h1')
+h1.innerText ='Name of Places'
+places.appendChild(h1)
+
+const ul = document.createElement('ul')
+places.appendChild(ul)
+
+const li1 = document.createElement('li')
+li1.innerText = 'Rajshahi'
+ul.appendChild(li1)
+
+const li2 = document.createElement('li')
+li2.innerText = 'Sylhet'
+ul.appendChild(li2)
+
+const li3 = document.createElement('li')
+li3.innerText = 'Dhaka'
+ul.appendChild(li3)
+
+
+
