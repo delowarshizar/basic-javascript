@@ -75,5 +75,13 @@ const li3 = document.createElement('li')
 li3.innerText = 'Dhaka'
 ul.appendChild(li3)
 
-
+const books = document.createElement('section')
+books.innerHTML = `
+<h1> These books are very popular </h1>
+<ul>
+    <li>Computer Fundamental </li>
+    <li>Machine Learing</li>
+</ul>
+`
+main.appendChild(books)
 
