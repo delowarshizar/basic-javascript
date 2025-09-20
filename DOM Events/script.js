@@ -19,3 +19,8 @@ function makeBgPurple()
 {
     document.body.style.backgroundColor = 'purple'
 }
+
+document.getElementById('btn-make-yellow')
+    .addEventListener('click',function(){
+        document.body.style.backgroundColor = 'yellow'
+    })
