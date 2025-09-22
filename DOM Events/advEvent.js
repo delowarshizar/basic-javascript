@@ -7,12 +7,12 @@ document.getElementById("add-btn").addEventListener("click", function () {
   oldList.appendChild(newList);
 });
 
-// const items = document.getElementsByClassName("items");
-// for (const item of items) {
-//   item.addEventListener("click", function (event) {
-//     event.target.parentNode.removeChild(event.target);
-//   });
-// }
+const items = document.getElementsByClassName("items");
+for (const item of items) {
+  item.addEventListener("click", function (event) {
+    event.target.parentNode.removeChild(event.target);
+  });
+}
 
 document
   .getElementById("item-list")
