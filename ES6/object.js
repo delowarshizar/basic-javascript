@@ -15,3 +15,9 @@ delete employee.Salary;
 employee.location = "rajshahi";
 employee.name = "Caesar";
 console.log(Object.entries(employee));
+
+//for in 
+for(const keys in employee){
+    const value = employee[keys];
+    console.log(keys,value)
+}
