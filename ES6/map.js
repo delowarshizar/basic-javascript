@@ -9,3 +9,5 @@ numbers.forEach((x) => {
 
 const greaterthan5 = numbers.filter((y) => y >=  5);
 console.log(greaterthan5)
+const greaterthan4 = numbers.find((y) => y >=  5);
+console.log(greaterthan4)
