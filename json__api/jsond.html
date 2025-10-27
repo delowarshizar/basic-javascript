@@ -4,21 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Json</title>
+    <style>
+      #post-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+          grid-gap: 10px;
+          row-gap: 50px;
+      }
+      .post-card {
+        background-color: rgb(71, 222, 222);
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid rgb(16, 9, 9);
+        box-shadow: 1px 1px 1px 1px rgb(255, 235, 192);
+        height: 100%;
+        margin: 10px 10px;
+      }
+      .post-card p {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <h1>Delowar Husain</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque magnam
-      minima voluptatem vel? Rem asperiores accusantium consectetur, quae iste
-      maxime porro cum sequi quos nisi quam obcaecati, esse excepturi provident
-      delectus reiciendis? Ab rerum aspernatur eos nemo excepturi nostrum amet
-      ducimus fuga distinctio, reprehenderit consectetur inventore quam iure!
-      Officia, magnam.
-    </p>
-
     <button onclick="loadData()">Load Data</button>
     <button onclick="loadPost()">Load Post</button>
-    <ol id="post-container"></ol>
+    <div id="post-container"></div>
     <script src="jsond.js"></script>
   </body>
 </html>

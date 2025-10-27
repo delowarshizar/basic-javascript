@@ -17,8 +17,13 @@ const dataDisplay = (posts) => {
   const postContainer = document.getElementById("post-container");
   postContainer.innerHTML = " ";
   posts.forEach((post) => {
-    const li = document.createElement("li");
-    li.innerText = post.title;
-    postContainer.appendChild(li);
+    const para = document.createElement("div");
+    para.innerHTML = `  <div class="post-card">
+        <h1>${post.title}</h1>
+        <p>${post.body}</p>
+      </div>`;
+    postContainer.appendChild(para);
   });
 };
+
+loadPost()
