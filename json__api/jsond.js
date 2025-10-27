@@ -15,6 +15,7 @@ const loadPost = () => {
 
 const dataDisplay = (posts) => {
   const postContainer = document.getElementById("post-container");
+  postContainer.innerHTML = " ";
   posts.forEach((post) => {
     const li = document.createElement("li");
     li.innerText = post.title;
