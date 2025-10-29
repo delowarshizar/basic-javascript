@@ -8,12 +8,19 @@ const loadTodo = () => {
 };
 
 const Display = (posts) => {
-  const ulbox = document.getElementById("todo-box");
-  ulbox.innerText = "";
+  const todoBox = document.getElementById("todo-box");
+  todoBox.innerHTML = "";
   posts.forEach((post) => {
-    const li = document.createElement("li");
-    li.innerText = post.title;
-    ulbox.appendChild(li);
+    const todo = document.createElement("div");
+    todo.innerHTML = ` <div class="todo-card">
+        <p>  ${
+          post.completed == true
+            ? `<i class="fa-solid fa-square-check"></i>`
+            : `<i class="fa-regular fa-square-check"></i>`
+        }</p>
+        <h2> ${post.title}</h2>
+    </div>`;
+    todoBox.appendChild(todo);
   });
 };
-loadTodo()
+loadTodo();
