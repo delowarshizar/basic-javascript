@@ -7,6 +7,7 @@ const getData1 = new Promise((resolve, reject) => {
     reject({ err: "value is rejected" });
   }
 });
+
 const getData2 = new Promise((resolve, reject) => {
   const data = Math.random() * 10;
   console.log(data);
@@ -16,6 +17,7 @@ const getData2 = new Promise((resolve, reject) => {
     reject({ err: "value is rejected" });
   }
 });
+
 const getData3 = new Promise((resolve, reject) => {
   const data = Math.random() * 10;
   console.log(data);
